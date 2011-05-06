@@ -1,0 +1,35 @@
+<h1>Listing time_gliders</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Focus date</th>
+    <th>Inital zoom</th>
+    <th>Events url</th>
+    <th>Legend</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @time_gliders.each do |time_glider| %>
+  <tr>
+    <td><%= time_glider.id %></td>
+    <td><%= time_glider.title %></td>
+    <td><%= time_glider.description %></td>
+    <td><%= time_glider.focus_date %></td>
+    <td><%= time_glider.inital_zoom %></td>
+    <td><%= time_glider.events_url %></td>
+    <td><%= time_glider.legend %></td>
+    <td><%= link_to 'Show', time_glider %></td>
+    <td><%= link_to 'Edit', edit_time_glider_path(time_glider) %></td>
+    <td><%= link_to 'Destroy', time_glider, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Time glider', new_time_glider_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: MyString
+  title: MyString
+  description: MyText
+  focus_date: MyString
+  inital_zoom: 1
+  events_url: MyString
+  legend: MyText
+
+two:
+  id: MyString
+  title: MyString
+  description: MyText
+  focus_date: MyString
+  inital_zoom: 1
+  events_url: MyString
+  legend: MyText

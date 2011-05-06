@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @time_glider.id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @time_glider.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @time_glider.description %>
+</p>
+
+<p>
+  <b>Focus date:</b>
+  <%= @time_glider.focus_date %>
+</p>
+
+<p>
+  <b>Inital zoom:</b>
+  <%= @time_glider.inital_zoom %>
+</p>
+
+<p>
+  <b>Events url:</b>
+  <%= @time_glider.events_url %>
+</p>
+
+<p>
+  <b>Legend:</b>
+  <%= @time_glider.legend %>
+</p>
+
+
+<%= link_to 'Edit', edit_time_glider_path(@time_glider) %> |
+<%= link_to 'Back', time_gliders_path %>

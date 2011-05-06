@@ -1,0 +1,45 @@
+<%= form_for(@time_glider) do |f| %>
+  <% if @time_glider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@time_glider.errors.count, "error") %> prohibited this time_glider from being saved:</h2>
+
+      <ul>
+      <% @time_glider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :focus_date %><br />
+    <%= f.text_field :focus_date %>
+  </div>
+  <div class="field">
+    <%= f.label :inital_zoom %><br />
+    <%= f.text_field :inital_zoom %>
+  </div>
+  <div class="field">
+    <%= f.label :events_url %><br />
+    <%= f.text_field :events_url %>
+  </div>
+  <div class="field">
+    <%= f.label :legend %><br />
+    <%= f.text_area :legend %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
