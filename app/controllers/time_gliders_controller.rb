@@ -17,9 +17,11 @@ class TimeGlidersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json
-      format.xml  { render :xml => @time_glider }
+      # we do not want to use this
       # format.json  { render :json => @time_glider }
+      # because we want to change the json output of a few fields
+      format.json # show.json.erb
+      format.xml  { render :xml => @time_glider }
     end
   end
 
