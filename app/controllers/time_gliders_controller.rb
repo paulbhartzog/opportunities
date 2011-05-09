@@ -17,8 +17,9 @@ class TimeGlidersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.json
       format.xml  { render :xml => @time_glider }
-      format.json  { render :json => @time_glider }
+      # format.json  { render :json => @time_glider }
     end
   end
 
