@@ -2,12 +2,13 @@
 
 <table>
   <tr>
-    <th>Id</th>
+    <th>Tg</th>
     <th>Title</th>
     <th>Description</th>
     <th>Focus date</th>
-    <th>Inital zoom</th>
+    <th>Initial zoom</th>
     <th>Events url</th>
+    <th>Events</th>
     <th>Legend</th>
     <th></th>
     <th></th>
@@ -16,12 +17,13 @@
 
 <% @time_gliders.each do |time_glider| %>
   <tr>
-    <td><%= time_glider.id %></td>
+    <td><%= time_glider.tg_id %></td>
     <td><%= time_glider.title %></td>
     <td><%= time_glider.description %></td>
     <td><%= time_glider.focus_date %></td>
-    <td><%= time_glider.inital_zoom %></td>
+    <td><%= time_glider.initial_zoom %></td>
     <td><%= time_glider.events_url %></td>
+    <td><%= time_glider.events %></td>
     <td><%= time_glider.legend %></td>
     <td><%= link_to 'Show', time_glider %></td>
     <td><%= link_to 'Edit', edit_time_glider_path(time_glider) %></td>

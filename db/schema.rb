@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110503220612) do
+ActiveRecord::Schema.define(:version => 20110509184804) do
 
   create_table "opportunities", :force => true do |t|
     t.string   "title"
@@ -25,11 +25,13 @@ ActiveRecord::Schema.define(:version => 20110503220612) do
   end
 
   create_table "time_gliders", :force => true do |t|
+    t.integer  "tg_id"
     t.string   "title"
     t.text     "description"
-    t.string   "focus_date"
-    t.integer  "inital_zoom"
+    t.date     "focus_date"
+    t.integer  "initial_zoom"
     t.string   "events_url"
+    t.text     "events"
     t.text     "legend"
     t.datetime "created_at"
     t.datetime "updated_at"

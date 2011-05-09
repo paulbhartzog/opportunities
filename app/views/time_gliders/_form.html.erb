@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
+    <%= f.label :tg_id %><br />
+    <%= f.text_field :tg_id %>
   </div>
   <div class="field">
     <%= f.label :title %><br />
@@ -25,15 +25,19 @@
   </div>
   <div class="field">
     <%= f.label :focus_date %><br />
-    <%= f.text_field :focus_date %>
+    <%= f.date_select :focus_date %>
   </div>
   <div class="field">
-    <%= f.label :inital_zoom %><br />
-    <%= f.text_field :inital_zoom %>
+    <%= f.label :initial_zoom %><br />
+    <%= f.text_field :initial_zoom %>
   </div>
   <div class="field">
     <%= f.label :events_url %><br />
     <%= f.text_field :events_url %>
+  </div>
+  <div class="field">
+    <%= f.label :events %><br />
+    <%= f.text_area :events %>
   </div>
   <div class="field">
     <%= f.label :legend %><br />
