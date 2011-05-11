@@ -32,6 +32,9 @@
 
 <p id="notice"><%= notice %></p>
 
+<div id='timeglider_container'></div>
+
+
 <p>
   <b>Tg:</b>
   <%= @time_glider.tg_id %>
@@ -71,8 +74,6 @@
   <b>Legend:</b>
   <%= @time_glider.legend %>
 </p>
-
-<div id='timeglider_container'></div>
 
 <%= link_to 'Edit', edit_time_glider_path(@time_glider) %> |
 <%= link_to 'Back', time_gliders_path %>
