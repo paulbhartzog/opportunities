@@ -1,1 +1,10 @@
-[ { "id":"com_futureforwardinstitute_timeline-1", "title": "FFI Timeglider", "description": "FFI Timeglider Description", "initial_zoom": "30", "focus_date": "2011-06-01 12:00:00", "color": "#82530d", "events": [ { "id":"1", "title": "FlowsMassagedItem One A", "link": "http://www.futureforwardinstitute.com/", "description": "description here with quotes \"like this\"", "startdate": "2011-01-01 12:00:00", "enddate": "2011-04-01 12:00:00", "icon": "triangle_green.png", "importance":"40" }, { "id":"1-2", "title": "FlowsMassagedItem One B", "link": "http://www.futureforwardinstitute.com/", "description": "description here with quotes \"like this\"", "startdate": "2011-02-01 12:00:00", "enddate": "2011-05-01 12:00:00", "icon": "triangle_green.png", "importance":"40" }, { "id":"2", "title": "FlowsMassagedItem Two", "link": "http://www.futureforwardinstitute.com/", "description": "description here with quotes \"like this\"", "startdate": "2011-02-01 12:00:00", "enddate": "2011-08-01 12:00:00", "icon": "square_blue.png", "importance":"50" }, { "id":"3", "title": "FlowsMassagedItem Three", "link": "http://www.futureforwardinstitute.com/", "description": "description here with quotes \"like this\"", "startdate": "2011-07-01 12:00:00", "enddate": "2011-011-01 12:00:00", "icon": "circle_orange.png", "importance":"30" } ], "legend": [ {"title":"list one", "icon":"triangle_green.png"}, {"title":"list two", "icon":"square_blue.png"}, {"title":"list three", "icon":"circle_orange.png"} ] } ]
+[
+{
+    "id": "<%= @time_glider.id %>",
+    "title": "<%= @time_glider.title %>",
+    "focus_date": "<%= @time_glider.focus_date %>",
+    "initial_zoom": "<%= @time_glider.initial_zoom %>",
+    "events": <%= raw @time_glider.events %>,
+    "legend": <%= raw @time_glider.legend %>,
+}
+]
