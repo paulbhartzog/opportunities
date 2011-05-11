@@ -7,7 +7,10 @@ class OpportunitiesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @opportunities }
-      format.json { render :json => @opportunities }
+      # we do not want to use this
+      # format.json  { render :json => @opportunities }
+      # because we want to change the json output of a few fields
+      format.json { render :template => 'opportunities/opportunities' }
     end
   end
 

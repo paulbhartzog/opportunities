@@ -1,10 +1,13 @@
+<%
+    @opportunities = Opportunity.all
+%>
 [
 {
-    "id": "<%= @time_glider.id %>",
+    "id": "time_glider_<%= @time_glider.id %>",
     "title": "<%= @time_glider.title %>",
     "focus_date": "<%= @time_glider.focus_date %>",
     "initial_zoom": "<%= @time_glider.initial_zoom %>",
-    "events": <%= raw @time_glider.events %>,
+    "events": <%=  render :template => 'opportunities/opportunities' %>,
     "legend": <%= raw @time_glider.legend %>,
 }
 ]

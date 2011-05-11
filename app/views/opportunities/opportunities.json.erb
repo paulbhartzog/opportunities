@@ -1,0 +1,21 @@
+<%
+@opportunities = Opportunity.all
+%>
+[
+<%
+for @opportunity in @opportunities
+%>
+{
+    "id": "opportunity_<%= @opportunity.id %>",
+    "title": "<%= @opportunity.title %>",
+    "link": "<%= @opportunity.link %>",
+    "description": "<%= @opportunity.description %>",
+    "startdate": "<%= @opportunity.startdate %>",
+    "enddate": "<%= @opportunity.enddate %>",
+    "icon": "<%= @opportunity.icon %>",
+    "importance": "<%= @opportunity.importance %>",
+},
+<%
+end
+%>
+]
